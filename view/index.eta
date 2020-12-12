@@ -1,0 +1,6 @@
+{{# layout('layout/default') }}
+
+{{! includeFile('partial/home-nav', it.nav) }}
+
+<h1>Hello {{ it.name }}!</h1>
+<p>You are seeing {{ it.page }} page</p>

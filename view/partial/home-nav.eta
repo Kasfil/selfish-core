@@ -1,0 +1,6 @@
+<nav class="default-nav">
+  <a href="/" class="navbar-brand">
+    <img src="/static/img/Selfish-logo-text.png" alt="Selfish">
+  </a>
+  {{ it.test }}
+</nav>

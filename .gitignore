@@ -1,0 +1,25 @@
+# Editor directory
+.vim/
+.vscode/
+
+# common project ignored file
+node_modules/
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# directory project
+# build directory
+dist/
+
+# file project
+.env
+
+# log file
+*.log
+yarn-debug.log*
+yarn-error.log*
+.yarnclean
+
+# TypeScript cache
+*.tsbuildinfo
