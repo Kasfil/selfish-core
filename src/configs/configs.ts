@@ -40,10 +40,10 @@ export const Configs = {
   // Content Security Policy
   csp: [
     'default-src \'none\'',
-    'script-src \'self\'',
+    'script-src \'self\' https://cdnjs.cloudflare.com',
     'connect-src \'self\'',
     'img-src \'self\'',
-    'style-src \'self\'',
+    'style-src \'self\' https://cdnjs.cloudflare.com',
     'base-uri \'self\'',
     'form-action \'self\''
   ],
