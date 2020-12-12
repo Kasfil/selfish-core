@@ -1,20 +1,14 @@
 import express from 'express'
+import cspContent from 'middleware/csp'
 
 const router = express.Router()
 
-router.get('/', (_, res) => {
+router.get('/', cspContent, (_, res) => {
   res.render('index', {
     title: 'Welcome to selfish',
     meta: {
       description: 'this is description'
     },
-    jsfoot: [
-      { path: 'main.js' },
-      {
-        url: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js',
-        integ: 'sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g=='
-      }
-    ],
     nav: {
       test: 'hey'
     },
