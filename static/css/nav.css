@@ -1,0 +1,27 @@
+/*
+* mixins
+*/
+
+/*
+* globally enabled
+*/
+nav.navbar {
+  background-color: transparent;
+  display: flex;
+  min-height: 45px;
+}
+
+/*
+* mobile media query
+*/
+@media only screen
+and (max-device-width: 768px) {
+  nav .navbar-brand {
+    display: inline-block;
+    margin: 8px 12px;
+  }
+
+  nav .navbar-brand img {
+    height: 25px;
+  }
+}

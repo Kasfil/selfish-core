@@ -1,6 +1,30 @@
-<nav class="default-nav">
-  <a href="/" class="navbar-brand">
-    <img src="/static/img/logo_text.png" alt="Selfish">
-  </a>
-  {{ it.test }}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a href="/" class="navbar-brand text-md-left text-center">
+      <img src="/static/img/logo_text_color.png" alt="Selfish" height="25px" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a href="#" class="nav-link fs-6 active">Jual</a></li>
+        <li class="nav-item"><a href="#" class="nav-link fs-6">Tawar</a></li>
+        <li class="nav-item"><a href="#" class="nav-link fs-6">Beli</a></li>
+        <li class="nav-item"><a href="#" class="nav-link fs-6">Lacak</a></li>
+        <li class="nav-item"><a href="#" class="nav-link fs-6">Ikuti</a></li>
+      </ul>
+      <div class="d-flex">
+        <a href="/login" class="btn btn-secondary me-3">Masuk</a>
+        <a href="/join" class="btn btn-primary">Gabung</a>
+      </div>
+    </div>
+  </div>
 </nav>
